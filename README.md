@@ -24,15 +24,15 @@ Portal terdiri dari **3 halaman HTML** terpisah yang terstruktur secara modular,
 uts-dpw-NIM/
 ├── asset/
 │   ├── css/
-│   │   └── style.css          # Stylesheet eksternal (CSS3)
+│   │   └── style.css         
 │   ├── img/
-│   │   └── alur_pendaftaran.jpeg  # Ilustrasi alur pendaftaran
+│   │   └── alur_pendaftaran.jpeg  
 │   └── javascript/
-│       └── script.js          # Logika validasi & toast notification
-├── index.html                 # Halaman Beranda
-├── alur.html                  # Halaman Alur Pendaftaran
-├── form.html                  # Halaman Formulir Pendaftaran
-└── README.md                  # File ini
+│       └── script.js         
+├── index.html                 
+├── alur.html                  
+├── form.html                  
+└── README.md                  
 ```
 
 ---
@@ -42,10 +42,10 @@ uts-dpw-NIM/
 ### A. Struktur & HTML5 Semantik
 - Tiga halaman HTML terpisah: `index.html`, `alur.html`, `form.html`
 - Elemen semantik HTML5: `<header>`, `<nav>`, `<main>`, `<footer>`
-- Aset dikelompokkan dalam direktori `asset/`
+- Aset dikelompokkan dalam folder `asset/`
 
 ### B. Konten Halaman
-- **Beranda (index.html):** Sambutan resmi + Tabel Jadwal PPDB dengan `<table>`, `<thead>`, `<tbody>`
+- **Beranda (index.html):** Sambutan + Tabel Jadwal PPDB dengan `<table>`, `<thead>`, `<tbody>`
 - **Alur Pendaftaran (alur.html):** Gambar ilustrasi dari `asset/img/` + daftar bernomor `<ol>`
 - **Formulir (form.html):** Input Nama, NIK (number), Jalur (`<select>`), tombol `type="button"`
 
@@ -56,6 +56,6 @@ uts-dpw-NIM/
 - **Glow / Box-Shadow focus state** pada input form
 
 ### D. JavaScript
-- **Custom Toast Notification** muncul di bawah-tengah layar selama 3 detik lalu fade-out
+- **Custom Toast Notification** akan muncul di bawah bagian tengah layar selama 3 detik kemudian fade-out
 - **Validasi:** Cek field kosong dan NIK tepat 16 digit
 - **Reset form** otomatis setelah pendaftaran berhasil
