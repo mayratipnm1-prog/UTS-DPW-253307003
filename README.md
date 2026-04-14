@@ -12,9 +12,9 @@
 
 ## Deskripsi Project
 
-Project ini merupakan **Portal Pendaftaran Siswa Baru (PPDB)** untuk instansi pendidikan **Sekolah Global Nusantara**, dibangun sebagai jawaban UTS mata kuliah **Desain & Pemrograman Web (TI24206)**.
+Project ini merupakan **Portal Pendaftaran Siswa Baru (PPDB)** untuk instansi pendidikan **Sekolah Global Nusantara**, dibangun sebagai jawaban UTS mata kuliah **Desain & Pemrograman Web**.
 
-Portal terdiri dari **3 halaman HTML** terpisah yang terstruktur secara modular, dilengkapi dengan styling CSS3 modern dan validasi JavaScript.
+Portal terdiri dari **3 halaman HTML** terpisah yang terstruktur, dilengkapi dengan styling CSS3 modern dan validasi JavaScript.
 
 ---
 
@@ -37,7 +37,7 @@ uts-dpw-NIM/
 
 ---
 
-## Fitur yang Diimplementasikan
+## Fitur yang Dipakai
 
 ### A. Struktur & HTML5 Semantik
 - Tiga halaman HTML terpisah: `index.html`, `alur.html`, `form.html`
