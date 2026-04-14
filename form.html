@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isi Formulir - PPDB</title>
+    <link rel="icon" type="img/png" href="asset/img/logo_sekolah.png" sizes="16x16" />
+    <link rel="stylesheet" href="asset/css/style.css">
+</head>
+<body>
+    <header>
+        <img src="asset/img/logo_sekolah.png" alt="Logo Sekolah" class="logo-header">
+    
+        <h1>Penerimaan Peserta Didik Baru (PPDB)</h1>
+        <p>SMA Negeri Pilangkenceng - Tahun Ajaran 2026/2027</p>
+    </header>
+    
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="alur.html">Alur Pendaftaran</a>
+        <a href="form.html">Isi Formulir</a>
+    </nav>
+
+    <main>
+        <div class="form-container">
+            <h2>Formulir Biodata Calon Siswa</h2>
+            <p class="form-subtitle">Mohon isi data berikut dengan benar sesuai dengan dokumen asli.</p>
+            
+            <form id="ppdbForm">
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap Sesuai Ijazah/Akta:</label>
+                    <input type="text" id="nama" name="nama" placeholder="Contoh: Mayra Ruhandini">
+                </div>
+                
+                <div class="form-group">
+                    <label for="nik">Nomor Induk Kependudukan (NIK - 16 Digit):</label>
+                    <input type="number" id="nik" name="nik" placeholder="16 Digit Angka"
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Alamat Email Untuk Dihubungi:</label>
+                    <input type="email" id="email" name="email" placeholder="contoh: nama@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="jalur">Jalur Pendaftaran:</label>
+                    <select id="jalur" name="jalur">
+                        <option value="">-- Pilih Jalur --</option>
+                        <option value="Zonasi">Zonasi</option>
+                        <option value="Prestasi">Prestasi</option>
+                        <option value="Afirmasi">Afirmasi</option>
+                    </select>
+                </div>
+                
+                <button type="button" onclick="validasiForm()">Kirim Pendaftaran</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+    <p>&copy; 2026 <strong>SMA Negeri Pilangkenceng</strong>. Terakreditasi <span>A</span></p>
+    <p>Jl. Raya Pilangkenceng No 15, Kab. Madiun</p>
+    </footer>
+
+    <div id="toast" class="toast"></div>
+
+    <script src="asset/javascript/script.js"></script>
+</body>
+</html>
