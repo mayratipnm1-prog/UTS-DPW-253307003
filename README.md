@@ -12,50 +12,12 @@
 
 ## Deskripsi Project
 
-Project ini merupakan **Portal Pendaftaran Siswa Baru (PPDB)** untuk instansi pendidikan **Sekolah Global Nusantara**, dibangun sebagai jawaban UTS mata kuliah **Desain & Pemrograman Web**.
+Pada proyek ini, saya membuat dan menampilkan sebuah website portal pendaftaran siswa baru (PPDB) di SMAN Pilangkenceng dengan berbasis web yang memiliki tampilan sederhana namun tetap modern. Website ini terdiri dari tiga bagian utama, yaitu halaman beranda, alur pendaftaran, dan formulir pendaftaran agar lebih terstruktur dan mudah digunakan.
 
-Portal terdiri dari **3 halaman HTML** terpisah yang terstruktur, dilengkapi dengan styling CSS3 modern dan validasi JavaScript.
+Saya juga mengatur susunan file proyek sesuai dengan penugasan UTS, memisahkan antara file HTML, CSS, JavaScript, dan gambar ke dalam folder masing-masing. Pada bagian tampilan, saya menggunakan CSS untuk memberikan desain yang lebih menarik, seperti penggunaan warna gradasi, efek hover, serta tampilan tabel dan form yang lebih nyaman dilihat.
 
----
-
-## Struktur Folder
-
-```
-uts-dpw-NIM/
-├── asset/
-│   ├── css/
-│   │   └── style.css         
-│   ├── img/
-│   │   └── alur_pendaftaran.jpeg  
-│   └── javascript/
-│       └── script.js         
-├── index.html                 
-├── alur.html                  
-├── form.html                  
-└── README.md                  
-```
+Selain itu, saya menambahkan fitur menarik yang dimunculkan ketika ada penginputan menggunakan JavaScript, tepatnya pada bagian formulir pendaftaran. Form tersebut dilengkapi dengan validasi sederhana, seperti pengecekan data kosong dan memastikan NIK terdiri dari 16 digit. Jika data belum sesuai, akan muncul notifikasi, sedangkan jika berhasil, form akan otomatis dikosongkan kembali.
 
 ---
 
-## Fitur yang Dipakai
 
-### A. Struktur & HTML5 Semantik
-- Tiga halaman HTML terpisah: `index.html`, `alur.html`, `form.html`
-- Elemen semantik HTML5: `<header>`, `<nav>`, `<main>`, `<footer>`
-- Aset dikelompokkan dalam folder `asset/`
-
-### B. Konten Halaman
-- **Beranda (index.html):** Sambutan + Tabel Jadwal PPDB dengan `<table>`, `<thead>`, `<tbody>`
-- **Alur Pendaftaran (alur.html):** Gambar ilustrasi dari `asset/img/` + daftar bernomor `<ol>`
-- **Formulir (form.html):** Input Nama, NIK (number), Jalur (`<select>`), tombol `type="button"`
-
-### C. CSS3 Modern
-- `linear-gradient` dua warna pada `<header>`
-- **Hover Effect** `translateY` pada tombol dan link navigasi
-- **Zebra striping** pada tabel
-- **Glow / Box-Shadow focus state** pada input form
-
-### D. JavaScript
-- **Custom Toast Notification** akan muncul di bawah bagian tengah layar selama 3 detik kemudian fade-out
-- **Validasi:** Cek field kosong dan NIK tepat 16 digit
-- **Reset form** otomatis setelah pendaftaran berhasil
